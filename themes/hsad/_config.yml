@@ -21,8 +21,6 @@ menu:
     path: /tags/
   - name: 搜索
     path: /search/
-  - name: 友链
-    path: /links/
   - name: 关于
     path: /about/
 social:
@@ -37,7 +35,7 @@ footer:
   support:
     enable: true
     title: YizhimiaoYa
-    link: 
+    link: https://yizhimiaoya-qaq.github.io
     logo: 
     prefix: 本网站由
     suffix: 提供赞助
