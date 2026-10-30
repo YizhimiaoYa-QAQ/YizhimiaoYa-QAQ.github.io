@@ -21,6 +21,8 @@ menu:
     path: /tags/
   - name: 搜索
     path: /search/
+  - name: 评论
+    path: /comments/
   - name: 关于
     path: /about/
 social:
