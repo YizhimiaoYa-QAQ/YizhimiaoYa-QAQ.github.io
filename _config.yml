@@ -101,3 +101,23 @@ theme: hsad
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+comments:
+  enable: true
+  active: giscus
+  lazyload: true
+  storage: true
+
+giscus:
+  enable: true
+  repo: YizhimiaoYa-QAQ/YizhimiaoYa-QAQ.github.io
+  repo_id: R_kgDOVWEWVw
+  category: Announcements
+  category_id: DIC_kwDOVWEWV84DKBra
+  mapping: pathname
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: top
+  theme: preferred_color_scheme
+  lang: zh-CN
+  loading: lazy
