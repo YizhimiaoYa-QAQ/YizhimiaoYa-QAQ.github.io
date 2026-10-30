@@ -44,6 +44,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Upload Pages artifact
         id: deployment
         uses: actions/upload-artifact@v6
+        with:
+          path:./public
