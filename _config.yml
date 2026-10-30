@@ -121,3 +121,42 @@ giscus:
   theme: preferred_color_scheme
   lang: zh-CN
   loading: lazy
+  
+seo:
+  # HTML 压缩
+  html:
+    enable: true
+    fix: true # 修复无效的 HTML
+    exclude:
+      - "*.min.{htm,html}"
+
+  # CSS 压缩
+  css:
+    enable: true
+    exclude:
+      - "**/*.min.css"
+
+  # JS 压缩
+  js:
+    enable: true
+    concat: false # 保持 false，避免与其它压缩插件冲突
+    exclude:
+      - "**/*.min.js"
+
+  # Rich Snippets (结构化数据)
+  schema:
+    article:
+      enable: true # 为文章生成结构化数据
+    breadcrumb:
+      enable: true # 生成面包屑导航数据
+    sitelink:
+      enable: true
+      searchUrl: https://YizhimiaoYa-QAQ.github.io/search?q={search_term_string} # 站内搜索地址
+    homepage:
+      enable: false # 作者注明此项仍在开发中，建议先关闭
+
+  # 图片处理
+  img:
+    enable: true
+    broken: false # 不建议开启，处理损坏图片可能导致内存溢出
+  sitemap: true
