@@ -63,17 +63,6 @@ block content
         a.post-nav__item.post-nav__item--next(href=url_for(nextPost.path))
           span.post-nav__label 下一篇
           strong= nextPost.title
-        //- 直接嵌入 Giscus 评论脚本
-    if previousPost || nextPost
-    nav.post-nav
-      if previousPost
-        a.post-nav__item.post-nav__item--prev(href=url_for(previousPost.path))
-          span.post-nav__label 上一篇
-          strong= previousPost.title
-      if nextPost
-        a.post-nav__item.post-nav__item--next(href=url_for(nextPost.path))
-          span.post-nav__label 下一篇
-          strong= nextPost.title
   if page.comments !== false
     .post-comments
       script(
