@@ -18,7 +18,7 @@ description: csgo第三届jab杯报名开始啦
 </iframe>
 <h3>jba cup（s3)补充说明</h3>
 <iframe
-  src="https://view.officeapps.live.com/op/embed.aspx?src=https://yizhimiaoya-qaq.github.io/files/jba-cup3.docx"
+  src="https://view.officeapps.live.com/op/embed.aspx?src=https://yizhimiaoya-qaq.github.io/files/jba-cups3.docx"
   width="100%"
   height="800"
   frameborder="0">
