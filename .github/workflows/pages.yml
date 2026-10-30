@@ -5,23 +5,27 @@ on:
     branches:
       - main
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: recursive
 
-      - name: Use Node.js 24
-        uses: actions/setup-node@v5
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
         with:
           node-version: "24"
-          cache: "npm"
+
+      - name: Cache NPM dependencies
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
 
       - name: Install Dependencies
         run: npm install
@@ -44,8 +48,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Upload Pages artifact
+      - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/upload-artifact@v6
-        with:
-          path:./public
+        uses: actions/deploy-pages@v4
