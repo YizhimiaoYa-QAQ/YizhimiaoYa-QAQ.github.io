@@ -28,5 +28,8 @@
   "allowScripts": {
     "hexo-util@3.3.0": true,
     "core-js@2.6.12": true
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
   }
 }
