@@ -33,6 +33,6 @@
     "core-js@2.6.12": true
   },
   "devDependencies": {
-    "pagefind": "^1.5.2"
+    "pagefind": "^1.6.0"
   }
 }
