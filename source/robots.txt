@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yizhimiaoya-qaq.github.io/sitemap.xml

@@ -160,3 +160,6 @@ seo:
     enable: true
     broken: false # 不建议开启，处理损坏图片可能导致内存溢出
   sitemap: true
+
+sitemap:
+  path: sitemap.xml
